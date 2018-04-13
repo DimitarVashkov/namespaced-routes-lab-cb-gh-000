@@ -29,8 +29,8 @@ class SongsController < ApplicationController
     if pref && !pref.allow_create_songs
       redirect_to songs_path
     else
-    @song = Song.new
-  end
+      @song = Song.new
+    end
   end
 
   def create
